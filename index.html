@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palm Plantation Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌴 Palm Plantation Tracker</h1>
+
+    <form id="logForm">
+      <label>Zone:</label>
+      <select id="zone">
+        <option value="East">East</option>
+        <option value="West">West</option>
+        <option value="North">North</option>
+        <option value="South">South</option>
+      </select>
+
+      <label>Activity:</label>
+      <input type="text" id="activity" placeholder="e.g. Leaf Miner Check" required />
+
+      <label>Notes:</label>
+      <textarea id="notes" placeholder="Optional notes..."></textarea>
+
+      <button type="submit">Log Entry</button>
+    </form>
+
+    <h2>📋 Logged Reports</h2>
+    <ul id="logList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
